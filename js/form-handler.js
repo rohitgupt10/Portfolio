@@ -1,65 +1,58 @@
-$(document).ready(function () {
-  // Handle contact form submission
-  $(".contact-form").submit(function (e) {
-    e.preventDefault(); // Prevent default form submission
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the form element
+  const form = document.querySelector('form[action^="https://formspree.io"]');
 
-    // Get form data
-    var formData = $(this).serialize();
-    var $form = $(this);
-    var $submitButton = $form.find('input[type="submit"]');
-    var originalButtonText = $submitButton.val();
+  if (form) {
+    // Create a status element to show submission results
+    const statusElement = document.createElement("div");
+    statusElement.className = "form-status mt-4";
+    form.appendChild(statusElement);
 
-    // Change button text to show loading state
-    $submitButton.val("Sending...");
-    $submitButton.prop("disabled", true);
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-    // Create status message container if it doesn't exist
-    if ($form.find(".form-status").length === 0) {
-      $form.append('<div class="form-status mt-4"></div>');
-    }
-    var $statusContainer = $form.find(".form-status");
+      // Show sending status
+      statusElement.innerHTML =
+        '<div class="alert alert-info">Sending message...</div>';
 
-    // Send AJAX request
-    $.ajax({
-      type: "POST",
-      url: "contact_form_handler.php",
-      data: formData,
-      dataType: "json",
-      success: function (response) {
-        // Reset button
-        $submitButton.val(originalButtonText);
-        $submitButton.prop("disabled", false);
+      // Prepare form data
+      const formData = new FormData(form);
 
-        if (response.success) {
-          // Show success message
-          $statusContainer.html(
-            '<div class="alert alert-success">' + response.message + "</div>"
+      // Send form data to Formspree
+      fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            return response.json();
+          }
+          throw new Error(
+            `Server responded with ${response.status}: ${response.statusText}`
           );
+        })
+        .then((data) => {
+          // Success
+          statusElement.innerHTML =
+            '<div class="alert alert-success">Message sent successfully!</div>';
+          form.reset();
 
-          // Reset form fields
-          $form[0].reset();
-
-          // Hide success message after 5 seconds
-          setTimeout(function () {
-            $statusContainer.html("");
-          }, 5000);
-        } else {
-          // Show error message
-          $statusContainer.html(
-            '<div class="alert alert-danger">' + response.message + "</div>"
-          );
-        }
-      },
-      error: function () {
-        // Reset button
-        $submitButton.val(originalButtonText);
-        $submitButton.prop("disabled", false);
-
-        // Show error message
-        $statusContainer.html(
-          '<div class="alert alert-danger">Oops! An error occurred while sending your message. Please try again later.</div>'
-        );
-      },
+          // Redirect after 2 seconds
+          setTimeout(() => {
+            window.location.href = "thanks.html";
+          }, 2000);
+        })
+        .catch((error) => {
+          // Error
+          console.error("Form submission error:", error);
+          statusElement.innerHTML = `<div class="alert alert-danger">
+                    <p>Error sending message: ${error.message}</p>
+                    <p>Please try again or contact directly at: binaygupta191@gmail.com</p>
+                </div>`;
+        });
     });
-  });
+  }
 });
