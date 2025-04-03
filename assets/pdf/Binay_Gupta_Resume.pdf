@@ -1,0 +1,269 @@
+%PDF-1.5
+1 0 obj
+<</Type /Catalog /Pages 2 0 R>>
+endobj
+2 0 obj
+<</Type /Pages /Kids [3 0 R] /Count 1>>
+endobj
+3 0 obj
+<</Type /Page /Parent 2 0 R /Resources 4 0 R /MediaBox [0 0 612 792] /Contents 6 0 R>>
+endobj
+4 0 obj
+<</Font <</F1 5 0 R /F2 7 0 R /F3 8 0 R /F4 9 0 R>>
+/XObject << /Img1 10 0 R >>
+/ExtGState << /GS1 11 0 R >>
+>>
+endobj
+5 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold>>
+endobj
+7 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica>>
+endobj
+8 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-Oblique>>
+endobj
+9 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica-BoldOblique>>
+endobj
+10 0 obj
+<</Type /XObject /Subtype /Form /BBox [0 0 100 100] /Resources 4 0 R /Length 10>>
+stream
+0.2 0.2 0.2 rg
+endstream
+endobj
+11 0 obj
+<</Type /ExtGState /CA 1.0 /ca 1.0>>
+endobj
+6 0 obj
+<</Length 5000>>
+stream
+q
+% Blue background rectangle
+0.094 0.196 0.31 rg
+0 0 205 792 re
+f
+Q
+
+q
+% Main content area (white)
+1 1 1 rg
+205 0 407 792 re
+f
+Q
+
+BT
+% Name and title
+/F1 24 Tf
+250 750 Td
+(BINAY GUPTA) Tj
+
+/F3 14 Tf
+0 -25 Td
+(BACHELOR OF COMPUTER APPLICATION STUDENT) Tj
+
+% Contact section title
+/F1 16 Tf
+-201 -40 Td
+1 1 1 rg
+(CONTACT) Tj
+
+% Contact details
+/F2 10 Tf
+0 -25 Td
+1 1 1 rg
+(+9779769805573) Tj
+
+0 -20 Td
+(binaygupta191@gmail.com) Tj
+
+0 -20 Td
+(Mechinagar-10, Jhapa, Nepal) Tj
+
+% Education section title
+/F1 16 Tf
+0 -45 Td
+(EDUCATION) Tj
+
+% Education details - BCA
+/F1 11 Tf
+0 -25 Td
+(2021 - Present) Tj
+
+/F2 10 Tf
+0 -20 Td
+(TRIBHUVAN UNIVERSITY) Tj
+
+/F2 10 Tf
+0 -20 Td
+(► Bachelor of Computer Application) Tj
+
+% Education details - High School
+/F1 11 Tf
+0 -25 Td
+(2019 - 2021) Tj
+
+/F2 10 Tf
+0 -20 Td
+(DHULABARI HIGH SCHOOL) Tj
+
+/F2 10 Tf
+0 -20 Td
+(► Grade: A) Tj
+
+% Education details - Middle School
+/F1 11 Tf
+0 -25 Td
+(2006 - 2018) Tj
+
+/F2 10 Tf
+0 -20 Td
+(SHARADA SHISHU SADAN) Tj
+
+/F2 10 Tf
+0 -20 Td
+(► Grade: A+) Tj
+
+% Skills section title
+/F1 16 Tf
+0 -45 Td
+(SKILLS) Tj
+
+% Skills list
+/F2 10 Tf
+0 -20 Td
+(► JavaScript) Tj
+
+0 -15 Td
+(► PHP) Tj
+
+0 -15 Td
+(► Bootstrap) Tj
+
+0 -15 Td
+(► MySQL) Tj
+
+0 -15 Td
+(► C & C#) Tj
+
+0 -15 Td
+(► Java) Tj
+
+% Languages section
+/F1 16 Tf
+0 -35 Td
+(LANGUAGES) Tj
+
+% Languages list
+/F2 10 Tf
+0 -20 Td
+(► English (Proficient)) Tj
+
+0 -15 Td
+(► Nepali (Native)) Tj
+
+% Profile section title - right column
+/F1 16 Tf
+201 465 Td
+0 0 0 rg
+(PROFILE) Tj
+
+% Profile content
+/F2 10 Tf
+0 -25 Td
+(A Bachelor of Computer Application student at Tribhuvan University with a) Tj
+0 -18 Td
+(strong passion for learning and exploring new technologies. Interested in) Tj
+0 -18 Td
+(software development, cybersecurity, data science, and artificial intelligence.) Tj
+0 -18 Td
+(Looking to apply my skills and knowledge in a professional environment.) Tj
+
+% Work Experience section title
+/F1 16 Tf
+0 -50 Td
+(PROJECTS) Tj
+
+% Project 1
+/F1 12 Tf
+0 -30 Td
+(Hotel Booking Website) Tj
+
+/F2 10 Tf
+300 5 Td
+(2023) Tj
+
+/F2 11 Tf
+-300 -25 Td
+(4th Semester Project) Tj
+
+/F2 10 Tf
+0 -25 Td
+(► Developed a hotel booking website that allows users to browse) Tj
+0 -18 Td
+(  hotels, view details, and make reservations online) Tj
+0 -18 Td
+(► Implemented user authentication, booking management, and) Tj
+0 -18 Td
+(  payment processing features) Tj
+0 -18 Td
+(► Technologies used: Bootstrap, PHP, MySQL, JavaScript) Tj
+
+% Technical Skills section title
+/F1 16 Tf
+0 -50 Td
+(TECHNICAL SKILLS) Tj
+
+% Technical Skills content in two columns
+/F2 10 Tf
+0 -25 Td
+(► Web Development) Tj
+150 0 Td
+(► Microsoft Office Suite) Tj
+-150 -18 Td
+(► Database Management) Tj
+150 0 Td
+(► Git Version Control) Tj
+
+% Interests section title
+/F1 16 Tf
+-150 -50 Td
+(INTERESTS) Tj
+
+% Interests content
+/F2 10 Tf
+0 -25 Td
+(► Software Development) Tj
+150 0 Td
+(► Data Science) Tj
+-150 -18 Td
+(► Cybersecurity) Tj
+150 0 Td
+(► Cricket) Tj
+-150 -18 Td
+(► Artificial Intelligence) Tj
+150 0 Td
+(► Movies) Tj
+
+ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f
+0000000010 00000 n
+0000000056 00000 n
+0000000111 00000 n
+0000000212 00000 n
+0000000342 00000 n
+0000000607 00000 n
+0000000414 00000 n
+0000000475 00000 n
+0000000541 00000 n
+0000000611 00000 n
+0000000726 00000 n
+trailer
+<</Size 12 /Root 1 0 R>>
+startxref
+5658
+%%EOF 
